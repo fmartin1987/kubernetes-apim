@@ -78,6 +78,9 @@ spec:
           mountPath: "/home/wso2user/apim-artifacts"
           name: apim-tm1-storage-volume
       serviceAccountName: "wso2svcacct"
+      securityContext:
+        supplementalGroups:
+          - 5555
       volumes:
       - name: apim-tm1-storage-volume
         persistentVolumeClaim:
