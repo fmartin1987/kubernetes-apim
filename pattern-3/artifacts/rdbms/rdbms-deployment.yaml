@@ -48,3 +48,6 @@ spec:
         persistentVolumeClaim:
           claimName: apim-rdbms-volume-claim
       serviceAccountName: "wso2svcacct"
+      securityContext:
+        supplementalGroups:
+          - 5555
