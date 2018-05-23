@@ -61,6 +61,9 @@ spec:
           initialDelaySeconds: 300
           periodSeconds: 20
       serviceAccountName: "wso2svcacct"
+      securityContext:
+        supplementalGroups:
+          - 5555
       volumes:
       - name: apim-store-storage-volume
         persistentVolumeClaim:
