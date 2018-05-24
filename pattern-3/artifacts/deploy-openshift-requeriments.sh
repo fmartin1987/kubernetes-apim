@@ -3,4 +3,3 @@ oc create serviceaccount wso2svcacct
 oc adm policy add-scc-to-user anyuid -z wso2svcacct -n wso2
 
 oc create -f volumes/persistent-volumes.yaml
-oc create -f rdbms/rdbms-persistent-volume.yaml
