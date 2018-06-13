@@ -11,5 +11,3 @@ kubectl create -f apim-publisher/wso2apim-publisher-local-service.yaml
 kubectl create -f apim-publisher/wso2apim-publisher-service.yaml
 
 kubectl create -f apim-publisher/wso2apim-publisher-deployment.yaml
-
-kubectl create -f routes/wso2apim-publisher-route.yaml
